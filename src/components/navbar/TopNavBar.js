@@ -13,7 +13,7 @@ import profileImage from "../../assets/profileImage.png";
 
 export default function TopNavBar() {
   return (
-    <nav className="w-full bg-white py-1 drop-shadow ">
+    <nav className="w-full bg-white py-1 drop-shadow fixed z-45">
       <div className="flex justify-between items-center my-6 mx-6">
         <div className="flex space-x-4 items-center">
           <div className="">

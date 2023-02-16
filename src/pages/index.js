@@ -1,5 +1,8 @@
+import MainBodyContents from "@/components/Contents/MainBodyContents";
 import BottomNavBar from "@/components/navbar/BottomNavBar";
 import TopNavBar from "@/components/navbar/TopNavBar";
+import LeftSideNavBar from "@/components/sidebar/LeftSideNavBar";
+import RightWidgets from "@/components/Widgets/RightWidgets";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,8 +16,19 @@ export default function Home() {
       </Head>
       <main className="">
         <div className="">
-         <TopNavBar />
-         <BottomNavBar />
+          <TopNavBar />
+          <BottomNavBar />
+          <div className="grid grid-cols-12 py-32 p-8 gap-6">
+            <div className="col-span-3 hidden lg:block ">
+              <LeftSideNavBar />
+            </div>
+            <div className="col-span-12 lg:col-span-6">
+              <MainBodyContents />
+            </div>
+            <div className="col-span-3 hidden lg:block ">
+              <RightWidgets />
+            </div>
+          </div>
         </div>
       </main>
     </>
