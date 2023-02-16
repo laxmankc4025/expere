@@ -19,13 +19,13 @@ export default function Home() {
           <TopNavBar />
           <BottomNavBar />
           <div className="grid grid-cols-12 py-32 p-8 gap-6">
-            <div className="col-span-3 hidden lg:block ">
+            <div className="col-span-3 hidden xl:block ">
               <LeftSideNavBar />
             </div>
-            <div className="col-span-12 lg:col-span-6">
+            <div className="col-span-12 xl:col-span-6">
               <MainBodyContents />
             </div>
-            <div className="col-span-3 hidden lg:block ">
+            <div className="col-span-3 hidden xl:block ">
               <RightWidgets />
             </div>
           </div>

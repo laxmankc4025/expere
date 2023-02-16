@@ -16,7 +16,7 @@ export default function TopNavBar() {
     <nav className="w-full bg-white py-1 drop-shadow fixed z-50">
       <div className="flex justify-between items-center my-6 mx-6">
         <div className="flex space-x-4 items-center">
-          <div className="">
+          <div className="text-slate-700">
             <RxHamburgerMenu className="w-6 h-6 xl:hidden cursor-pointer " />
           </div>
           <div className="">
@@ -55,13 +55,13 @@ export default function TopNavBar() {
               <IoMdArrowDropdown className="text-white text-xl cursor-pointer" />
             </div>
           </div>
-          <div className="">
+          <div className="text-slate-500">
             <BiNetworkChart className="w-6 h-6 cursor-pointer hidden md:block" />
           </div>
-          <div className="">
+          <div className="text-slate-500">
             <MdOutlineDarkMode className="w-8 h-8 md:w-6 md:h-6 cursor-pointer" />
           </div>
-          <div className="">
+          <div className="text-slate-500">
             <RiNotificationLine className="w-6 h-6 cursor-pointer hidden lg:block" />
           </div>
           <div className="">

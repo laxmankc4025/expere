@@ -7,8 +7,8 @@ import { MdOutlineFeed } from "react-icons/md";
 
 export default function BottomNavBar() {
   return (
-    <div className=" inset-x-0 bottom-0 md:hidden fixed drop-shadow-2xl">
-      <div className="flex items-center justify-between px-4 py-4 bg-white drop-shadow-md">
+    <div className=" inset-x-0 bottom-0 md:hidden fixed drop-shadow-2xl z-50">
+      <div className="flex items-center justify-between px-4 py-4 bg-white drop-shadow-md text-slate-600">
         <MdOutlineFeed className="w-8 h-8  text-blue-700 cursor-pointer" />
         <IoIosSearch className="w-8 h-8 cursor-pointer " />
         <div className="rounded-full bg-blue-600 py-2 px-2 cursor-pointer">
