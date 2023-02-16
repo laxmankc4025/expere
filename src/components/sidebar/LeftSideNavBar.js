@@ -14,51 +14,51 @@ import { BsDiscord } from "react-icons/bs";
 
 export default function LeftSideNavBar() {
   return (
-    <div className="bg-white rounded-xl p-5 flex flex-col space-y-8">
+    <div className="bg-white rounded-xl p-5 flex flex-col space-y-8 drop-shadow-lg">
       <div className="flex flex-col space-y-4 px-2 ">
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-blue-700 cursor-pointer">
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-blue-700 cursor-pointer">
             <MdOutlineFeed className="w-6 h-6" />
             <p className="px-6 font-semibold"> My Feed</p>
-          </p>
-        </p>
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-slate-600 cursor-pointer">
+          </div>
+        </div>
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-slate-600 cursor-pointer">
             <MdOutlineExplore className="w-6 h-6" />
             <p className="px-6 font-semibold"> Explore</p>
-          </p>
-        </p>
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-slate-600 cursor-pointer">
+          </div>
+        </div>
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-slate-600 cursor-pointer">
             <RiDraftLine className="w-6 h-6" />
             <p className="px-6 font-semibold"> Drafts</p>
-          </p>
-        </p>
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-slate-600 cursor-pointer">
+          </div>
+        </div>
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-slate-600 cursor-pointer">
             <BiBookBookmark className="w-6 h-6" />
             <p className="px-6 font-semibold"> Bookmarks</p>
-          </p>
-        </p>
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-slate-600 cursor-pointer">
+          </div>
+        </div>
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-slate-600 cursor-pointer">
             <FaLaptopCode className="w-6 h-6" />
             <p className="px-6 font-semibold"> Hackathons</p>
-          </p>
-        </p>
-        <p className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
-          <p className="flex text-slate-600 cursor-pointer">
+          </div>
+        </div>
+        <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
+          <div className="flex text-slate-600 cursor-pointer">
             <AiOutlineDoubleRight className="w-6 h-6" />
             <p className="px-6 font-semibold"> More</p>
-          </p>
-        </p>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col space-y-3">
         <hr className="py-2" />
-        <p className="text-slate-800 flex space-x-8 items-center">
+        <div className="text-slate-800 flex space-x-8 items-center">
           <p className="font-semibold text-lg">Trending Tags</p>
           <SlGraph className="w-6 h-6" />
-        </p>
+        </div>
         <div className="flex flex-col space-y-2 ">
           <p className="font-medium text-slate-600 cursor-pointer hover:bg-slate-50 hover:rounded-md hover:p-1">
             JavaScript
@@ -75,10 +75,10 @@ export default function LeftSideNavBar() {
           <p className="font-medium text-slate-600 cursor-pointer hover:bg-slate-50 hover:rounded-md hover:p-1">
             UI/UX
           </p>
-          <p className="flex text-slate-900 items-center space-x-2 cursor-pointer hover:bg-slate-50 hover:rounded-md hover:p-1">
+          <div className="flex text-slate-900 items-center space-x-2 cursor-pointer hover:bg-slate-50 hover:rounded-md hover:p-1">
             <p className="font-medium ">See all</p>
             <AiOutlineRight className="w-4 h-4" />
-          </p>
+          </div>
         </div>
       </div>
       <div className="flex justify-between px-2 text-slate-700">

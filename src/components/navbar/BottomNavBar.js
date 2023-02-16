@@ -9,11 +9,11 @@ export default function BottomNavBar() {
   return (
     <div className=" inset-x-0 bottom-0 md:hidden fixed drop-shadow-2xl">
       <div className="flex items-center justify-between px-4 py-4 bg-white drop-shadow-md">
-        <MdOutlineFeed className="w-8 h-8 cursor-pointer" />
+        <MdOutlineFeed className="w-8 h-8  text-blue-700 cursor-pointer" />
         <IoIosSearch className="w-8 h-8 cursor-pointer " />
-        <p className="rounded-full bg-blue-600 py-2 px-2 cursor-pointer">
+        <div className="rounded-full bg-blue-600 py-2 px-2 cursor-pointer">
           <FaPen className="w-5 h-5 cursor-pointer text-white" />
-        </p>
+        </div>
         <BiBookBookmark className="w-8 h-8 cursor-pointer" />
         <RiNotificationLine className="w-8 h-8 cursor-pointer" />
       </div>

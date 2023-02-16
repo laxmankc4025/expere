@@ -13,7 +13,7 @@ import profileImage from "../../assets/profileImage.png";
 
 export default function TopNavBar() {
   return (
-    <nav className="w-full bg-white py-1 drop-shadow fixed z-45">
+    <nav className="w-full bg-white py-1 drop-shadow fixed z-50">
       <div className="flex justify-between items-center my-6 mx-6">
         <div className="flex space-x-4 items-center">
           <div className="">
@@ -51,7 +51,7 @@ export default function TopNavBar() {
                 <FaPen className="text-white cursor-pointer mx-2 w-4 h-4" />
                 Write
               </button>
-              <p className="text-blue-200">|</p>
+              <div className="text-blue-200">|</div>
               <IoMdArrowDropdown className="text-white text-xl cursor-pointer" />
             </div>
           </div>
