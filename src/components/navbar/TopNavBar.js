@@ -10,6 +10,7 @@ import { BiNetworkChart } from "react-icons/bi";
 import { IoIosSearch } from "react-icons/io";
 
 import profileImage from "../../assets/profileImage.png";
+import MobileSideBar from "./MobileSideBar";
 
 export default function TopNavBar() {
   return (
@@ -17,7 +18,7 @@ export default function TopNavBar() {
       <div className="flex justify-between items-center my-6 mx-6">
         <div className="flex space-x-4 items-center">
           <div className="text-slate-700">
-            <RxHamburgerMenu className="w-6 h-6 xl:hidden cursor-pointer " />
+            <MobileSideBar   />
           </div>
           <div className="">
             <Image
@@ -28,7 +29,7 @@ export default function TopNavBar() {
               className="cursor-pointer"
             />
           </div>
-        </div >
+        </div>
         <div className="w-full max-w-2xl hidden xl:block">
           <form action="">
             <div className=" relative flex items-center text-gray-400 focus-within:text-gray-600">

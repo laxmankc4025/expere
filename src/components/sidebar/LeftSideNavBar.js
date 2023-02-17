@@ -11,6 +11,7 @@ import { BsTwitter } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FiInstagram } from "react-icons/fi";
 import { BsDiscord } from "react-icons/bs";
+import MobileSideBar from "../navbar/MobileSideBar";
 
 export default function LeftSideNavBar() {
   return (
