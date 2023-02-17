@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 function BlogStats() {
   return (
     <div className="">
-      <div className="bg-white p-5 rounded-xl drop-shadow-lg">
+      <div className="bg-white p-5 rounded-xl drop-shadow">
         <div className=" flex flex-col space-y-8">
           <div className="flex space-x-11 items-center">
             <p className="text-xl font-bold text-slate-700">BlogStats</p>
@@ -14,7 +14,7 @@ function BlogStats() {
             </div>
           </div>
           <div className="flex flex-col space-y-1">
-            <div className="flex space-x-6 text-medium font-medium text-slate-700">
+            <div className="flex space-x-2 text-medium font-medium text-slate-700">
               <p className="cursor-pointer">PageViews</p>
               <p className="text-blue-700 cursor-pointer">Articles</p>
               <p className="cursor-pointer">Appreciations</p>

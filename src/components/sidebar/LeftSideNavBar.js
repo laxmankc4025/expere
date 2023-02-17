@@ -14,7 +14,7 @@ import { BsDiscord } from "react-icons/bs";
 
 export default function LeftSideNavBar() {
   return (
-    <div className="bg-white rounded-xl p-5 flex flex-col space-y-8 drop-shadow-lg">
+    <div className="bg-white rounded-xl p-5 flex flex-col space-y-8 drop-shadow">
       <div className="flex flex-col space-y-4 px-2 ">
         <div className="hover:bg-slate-100 hover:rounded-md hover:px-2 hover:py-2">
           <div className="flex text-blue-700 cursor-pointer">

@@ -2,7 +2,7 @@ import React from "react";
 
 function Drafts() {
   return (
-    <div className="bg-white p-5 rounded-xl drop-shadow-lg">
+    <div className="bg-white p-5 rounded-xl drop-shadow">
       <div className="flex flex-col space-y-2">
         <div className="flex justify-between space-y-6 items-center">
           <p className="text-2xl pt-4 font-bold text-slate-800">Drafts(3)</p>
