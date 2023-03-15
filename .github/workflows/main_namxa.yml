@@ -22,15 +22,15 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v1
       with:
-        registry: https://mcr.microsoft.com/
-        username: ${{ secrets.AzureAppService_ContainerUsername_6967981c9d1d41a888f2bf9b1afec726 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_530e52f724f949ccb1e139991cf556f6 }}
+        registry: https://namxal.azurecr.io/
+        username: ${{ secrets.AzureAppService_ContainerUsername_ed02265a1e394965adb5f0d635ac98b2 }}
+        password: ${{ secrets.AzureAppService_ContainerPassword_d6e1cc8cd58540cd920b76db08750239 }}
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_6967981c9d1d41a888f2bf9b1afec726 }}/appsvc/staticsite:${{ github.sha }}
+        tags: namxal.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_ed02265a1e394965adb5f0d635ac98b2 }}/namxal:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -47,5 +47,5 @@ jobs:
       with:
         app-name: 'namxa'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f7e69fc32a554abe91c4a5b6c53c6d21 }}
-        images: 'mcr.microsoft.com/${{ secrets.AzureAppService_ContainerUsername_6967981c9d1d41a888f2bf9b1afec726 }}/appsvc/staticsite:${{ github.sha }}'
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_60b2ffd600d843ce9994fac4962d472b }}
+        images: 'namxal.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_ed02265a1e394965adb5f0d635ac98b2 }}/namxal:${{ github.sha }}'
